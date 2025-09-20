@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Travel Wiser</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <style>
+      .booking-section {
+        background: rgba(255,255,255,0.85);
+        border-radius: 20px;
+        margin: 200px auto;
+        padding: 30px;
+        margin-bottom: 400px;
+        max-width: 700px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        color: #222;
+      }
+      .booking-section h2 {
+        color: #2a623d;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .booking-form label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      .booking-form input, .booking-form select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+      .booking-form button {
+        margin-top: 20px;
+        margin-left: 290px;
+        background: #2a623d;
+        color: #fff;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .booking-form button:hover {
+        background: #1e4628;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <a href="home.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+      <ul class="menu">
+        <li class="item"><a href="home.html">Home</a></li>
+        <li class="item"><a href="about.html">About Us</a></li>
+        <li class="item"><a href="contact.html">Contact Us</a></li>
+        <li class="item"><a href="blog.html">Blog</a></li>
+      </ul>
+  <button type="submit" class="bookbutton" ><a href="booking.html">Book Now</a></button>
+    </nav>
+    <div class="booking-section">
+      <h2>Book Your Adventure</h2>
+      <form class="booking-form">
+        <label>Full Name:</label>
+        <input required>
+        
+        <label for="destination">Destination:</label>
+        <select required>
+          <option>Select a destination</option>
+          <option>Paris, France</option>
+          <option>Bali, Indonesia</option>
+          <option>New York City, USA</option>
+          <option>Tokyo, Japan</option>
+        </select>
+        
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit"><a href="thank_you.html">Book Now</a></button>
+      </form>
+      <p style="margin-top:30px;text-align:center;">
+        Need help? <a href="contact.html">Contact our team</a>
+      </p>
+    </div>
+<footer style="color: white; text-align: center;">All rights reserved. Travel Wiser &#169;</footer>
+</body>
+</html>
